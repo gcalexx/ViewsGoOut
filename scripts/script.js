@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".text").hide();
+  $(".text, .text-user").hide();
   $(".nav").hide();
   $("#menu, #menub").click(function(){
       $("#mySidenav").css("width", "305px");
@@ -19,13 +19,17 @@ $(document).ready(function(){
   $("#esidenav").mouseenter(function(){
     $("#esidenav").css("width", "230px");
     setTimeout( function(){
-      $(".text").show();
+      $(".text, .text-user").show();
     }, 300);
     
   });
   $("#esidenav").mouseleave(function(){
     $("#esidenav").css("width", "70px");
-    $(".text").hide();
+    $(".text, .text-user").hide();
+  });
+
+  $("#Explorar").click(function(){
+    $("#content").load("./index.html");
   });
 });
 

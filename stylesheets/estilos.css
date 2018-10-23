@@ -288,30 +288,17 @@
     transition: 0.5s;
     padding-top: 70px;
     color: white;
-    padding-left: 15px;
 }
 
 .user-img{
   border-radius: 50%;
   border: solid #6c132b 1.5px;
-  width: 50px;
-  height: 50px;
-}
-
-.esidenav a {
-    /*padding: 8px 8px 8px 32px;*/
-    text-decoration: none;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.esidenav a:hover {
-    color: #6c132b;
+  width: 40px;
+  height: 40px;
 }
 
 .icons{
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .text{
@@ -319,4 +306,37 @@
   margin-left: 20px;
   -webkit-animation-name: fadeInLeft;
   -webkit-animation-duration: 1s;
+  margin-bottom: 50px;
+}
+
+.icons{
+  list-style: none;
+  padding: 0;
+}
+
+.icons li{
+  padding: 17px;
+  margin: -7px;
+}
+
+.icons a{
+  text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  padding: 7px;
+  margin-left: 0px;
+}
+
+.icons li:hover {
+  background: #6c132b;
+}
+
+.text-user{
+  font-size: 25px;
+  font-style: bold;
+  margin-left: 20px;
+  -webkit-animation-name: fadeInLeft;
+  -webkit-animation-duration: 1s;
+  margin-bottom: 50px;
 }
