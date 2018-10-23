@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $(".text, .text-user").hide();
   $(".nav").hide();
+
   $("#menu, #menub").click(function(){
       $("#mySidenav").css("width", "305px");
       setTimeout(
@@ -16,6 +17,19 @@ $(document).ready(function(){
       $("#menu, #menub").fadeIn(400);
   });
   
+  $("#menu-events").click(function(){
+      $("#esidenav").removeClass("hidden-xs");
+      $("#esidenav").css("width", "230px");
+    setTimeout( function(){
+      $(".text, .text-user").show();
+    }, 185);
+  });
+
+  $("#close-events").click(function(){
+    $("#esidenav").css("width", "70px");
+      $("#esidenav").addClass("hidden-xs");
+  });
+
   $("#esidenav").mouseenter(function(){
     $("#esidenav").css("width", "230px");
     setTimeout( function(){
@@ -28,8 +42,16 @@ $(document).ready(function(){
     $(".text, .text-user").hide();
   });
 
-  $("#Explorar").click(function(){
-    $("#content").load("./index.html");
+  $("#explorar").click(function(){
+    $("#content").load("./explorar.html");
+    $("#esidenav").css("width", "70px");
+    $(".text, .text-user").hide();
+  });
+
+  $("#crear").click(function(){
+    $("#content").load("./explorar.html");
+    $("#esidenav").css("width", "70px");
+    $(".text, .text-user").hide();
   });
 });
 

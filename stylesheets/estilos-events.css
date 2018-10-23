@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+/*Events*/
+
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -53,8 +55,8 @@
 }
 
 .text-user{
-  font-size: 25px;
-  font-style: bold;
+  font-size: 20px;
+  font-weight: bold;
   margin-left: 20px;
   -webkit-animation-name: fadeInLeft;
   -webkit-animation-duration: 1s;
@@ -90,7 +92,100 @@
   background: #6c132b;
 }
 
-
 .glyphicon{
   font-size: 3em;
-} 
+}
+
+.active{
+  width: 5px;
+  height: 100%;
+  background-color: #6c132b;
+  margin-right: 0;
+  text-align: right;
+}
+
+.esidenav a{
+  text-decoration: none;
+}
+
+.menu{
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 10px;
+  cursor:pointer;
+  position: fixed;
+  z-index: 1;
+}
+
+.closebtn-events{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*Explorar*/ 
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*.explorar{
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}*/
+
+body{
+  background-color: rgba(108, 19, 43, .8);
+}
+
+.event{
+  border-radius: 8px;
+  border: solid #424242 1px;
+  background-color: white;
+  margin: 10px;
+}
+
+.img-event {
+  height: 150px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.img-event img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.info-event{
+  padding: 0px 20px 5px 20px;
+}
+
+.tittle-event{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.address-event{
+  font-size: 17px;
+}
+
+.event:hover{
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  transition: .5s;
+}
