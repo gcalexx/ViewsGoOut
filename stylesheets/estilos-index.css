@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-/*Index*/
-
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
@@ -16,19 +14,6 @@
   }
 }
 
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
 
 *{
   font-family: 'Raleway', sans-serif;
@@ -223,13 +208,6 @@
   .sidenav a {font-size: 18px;}
 }
 
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 .info{
   background-color: rgb(108, 19, 43);
   color: white;
@@ -272,71 +250,4 @@
 
 .footer{
   background-color: rgba(30, 30, 30, .8);
-}
-
-/*Eventos*/
-
-.esidenav {
-    height: 100%;
-    width: 70px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(20, 20, 20, .8);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 70px;
-    color: white;
-}
-
-.user-img{
-  border-radius: 50%;
-  border: solid #6c132b 1.5px;
-  width: 40px;
-  height: 40px;
-}
-
-.icons{
-  margin-top: 10px;
-}
-
-.text{
-  font-size: 20px;
-  margin-left: 20px;
-  -webkit-animation-name: fadeInLeft;
-  -webkit-animation-duration: 1s;
-  margin-bottom: 50px;
-}
-
-.icons{
-  list-style: none;
-  padding: 0;
-}
-
-.icons li{
-  padding: 17px;
-  margin: -7px;
-}
-
-.icons a{
-  text-decoration: none;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  padding: 7px;
-  margin-left: 0px;
-}
-
-.icons li:hover {
-  background: #6c132b;
-}
-
-.text-user{
-  font-size: 25px;
-  font-style: bold;
-  margin-left: 20px;
-  -webkit-animation-name: fadeInLeft;
-  -webkit-animation-duration: 1s;
-  margin-bottom: 50px;
 }

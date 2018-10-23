@@ -20,7 +20,7 @@ $(document).ready(function(){
     $("#esidenav").css("width", "230px");
     setTimeout( function(){
       $(".text, .text-user").show();
-    }, 300);
+    }, 185);
     
   });
   $("#esidenav").mouseleave(function(){
