@@ -92,7 +92,7 @@
   background: #6c132b;
 }
 
-.glyphicon{
+ul .glyphicon{
   font-size: 3em;
 }
 
@@ -138,10 +138,10 @@
   }
 }
 
-/*.explorar{
+.explorar{
   animation-name: fadeIn;
   animation-duration: 2s;
-}*/
+}
 
 body{
   background-color: rgba(108, 19, 43, .8);
@@ -152,6 +152,11 @@ body{
   border: solid #424242 1px;
   background-color: white;
   margin: 10px;
+}
+
+.event button{
+  background-color: #6c132b;
+  color: white;
 }
 
 .img-event {
@@ -186,6 +191,40 @@ body{
 }
 
 .event:hover{
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
   transition: .5s;
+}
+
+/*Info del evento*/
+
+.info-evento{
+  
+}
+
+.bg-white{
+  background-color: white;
+  background-size: 100%;
+  position: fixed;
+  z-index: -3;
+  left: 0;
+  right: 0;
+  padding-bottom: 25%;
+  display: block;
+  margin-top: 25%;
+}
+
+.bg-img{
+  background-image: url(../images/evento.jpg);
+  background-size: 100%;
+  position: fixed;
+  z-index: -3;
+  left: 0;
+  right: 0;
+  padding-bottom: 45%;
+  display: block;
+  -webkit-filter: blur(30px);
+  -moz-filter: blur(30px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
 }

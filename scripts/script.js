@@ -42,17 +42,31 @@ $(document).ready(function(){
     $(".text, .text-user").hide();
   });
 
+  $("#usuario").click(function(){
+    $("#esidenav").css("width", "70px");
+    $(".text, .text-user").hide();
+  });
+
   $("#explorar").click(function(){
-    $("#content").load("./explorar.html");
     $("#esidenav").css("width", "70px");
     $(".text, .text-user").hide();
   });
 
   $("#crear").click(function(){
-    $("#content").load("./explorar.html");
     $("#esidenav").css("width", "70px");
     $(".text, .text-user").hide();
   });
+
+  $("#buscar").click(function(){
+    $("#esidenav").css("width", "70px");
+    $(".text, .text-user").hide();
+  });
+
+  $("#configuracion").click(function(){
+    $("#esidenav").css("width", "70px");
+    $(".text, .text-user").hide();
+  });
+
 });
 
 
