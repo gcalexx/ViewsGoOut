@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-/*Events*/
-
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -96,14 +94,6 @@ ul .glyphicon{
   font-size: 3em;
 }
 
-.active{
-  width: 5px;
-  height: 100%;
-  background-color: #6c132b;
-  margin-right: 0;
-  text-align: right;
-}
-
 .esidenav a{
   text-decoration: none;
 }
@@ -125,6 +115,15 @@ ul .glyphicon{
     font-size: 36px;
     margin-left: 50px;
 }
+
+.active{
+  width: 5px;
+  height: 100%;
+  background-color: #6c132b;
+  margin-right: 0;
+  text-align: right;
+}
+
 
 /*Explorar*/ 
 
@@ -193,38 +192,4 @@ body{
 .event:hover{
   box-shadow: 0px 0px 20px rgb(255, 255, 255);
   transition: .5s;
-}
-
-/*Info del evento*/
-
-.info-evento{
-  
-}
-
-.bg-white{
-  background-color: white;
-  background-size: 100%;
-  position: fixed;
-  z-index: -3;
-  left: 0;
-  right: 0;
-  padding-bottom: 25%;
-  display: block;
-  margin-top: 25%;
-}
-
-.bg-img{
-  background-image: url(../images/evento.jpg);
-  background-size: 100%;
-  position: fixed;
-  z-index: -3;
-  left: 0;
-  right: 0;
-  padding-bottom: 45%;
-  display: block;
-  -webkit-filter: blur(30px);
-  -moz-filter: blur(30px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px);
 }

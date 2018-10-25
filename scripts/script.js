@@ -67,6 +67,12 @@ $(document).ready(function(){
     $(".text, .text-user").hide();
   });
 
+  $('#datetimepicker').data("DateTimePicker").FUNCTION()
+
+  $(function () {
+    $('#fecha').datetimepicker();
+  });
+
 });
 
 
