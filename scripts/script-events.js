@@ -39,6 +39,11 @@ $(document).ready(function(){
     $(".text, .text-user").hide();
   });
 
+  $("#ver-mas").click(function(){
+    $(".a-event").clone().appendTo("#row");
+    $("html").animate({ scrollTop: $(document).height() }, 1000);
+  });
+
 });
 
 
