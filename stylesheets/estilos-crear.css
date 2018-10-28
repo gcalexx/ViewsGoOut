@@ -116,14 +116,6 @@ ul .glyphicon{
     margin-left: 50px;
 }
 
-.active{
-  width: 5px;
-  height: 100%;
-  background-color: #6c132b;
-  margin-right: 0;
-  text-align: right;
-}
-
 
 @keyframes fadeIn {
   from {
@@ -154,4 +146,13 @@ body{
 
 .crear > input[type=text]{
 
+}
+
+.activo{
+  height: 77px;
+  width: 7px;
+  position: absolute;
+  background-color: #6c132b;
+  margin-top: -70px;
+  left: 0px;
 }
