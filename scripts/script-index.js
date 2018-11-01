@@ -16,14 +16,6 @@ $(document).ready(function(){
       $(".nav").hide();
       $("#menu, #menub").fadeIn(400);
   });
-  
-  $("#menu-events").click(function(){
-      $("#esidenav").removeClass("hidden-xs");
-      $("#esidenav").css("width", "230px");
-    setTimeout( function(){
-      $(".text, .text-user").show();
-    }, 185);
-  });
 
 });
 
