@@ -41,9 +41,23 @@
 			</div>
 		</div>
 		<div class="container explorar" id="container-explorar">
-			<h1 style="color: white;">Próximos Eventos</h1>
-			<hr>	
-			<div class="row" id="row">
+	      	<h1 style="color: white;">Próximos Eventos</h1>
+	      	<hr>  
+	      	<div class="row" id="row" >
+	        	<a href="infoevento.html" id="" name="" class="a-event">
+					<div class="col-xs-12 col-sm-6 col-md-4"><!--Inicio del div del evento-->
+				    	<div class="event">
+				    		<div id="img-event" class="img-event">
+				    			<img src="images/evento.jpg" alt="" id="img-event">
+				    		</div>
+					      	<div class="info-event">
+						        <h3 id="tittle-event" class="tittle-event">Título del evento</h3>
+						        <p id="date-event" class="date-event">Fecha del evento</p>
+						        <p id="address-event" class="address-event">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae est mollitia, repudiandae dolores. Necessitatibus</p>
+					      	</div>
+				    	</div>
+			  		</div><!--Fin del div del evento-->
+				</a>
 				<a href="infoevento.html" id="" name="" class="a-event">
 					<div class="col-xs-12 col-sm-6 col-md-4"><!--Inicio del div del evento-->
 				    	<div class="event">
@@ -67,7 +81,7 @@
 					      	<div class="info-event">
 						        <h3 id="tittle-event" class="tittle-event">Título del evento</h3>
 						        <p id="date-event" class="date-event">Fecha del evento</p>
-						        <p id="address-event" class="address-event">Dirección del evento</p>
+						        <p id="address-event" class="address-event">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae est mollitia, repudiandae dolores. Necessitatibus</p>
 					      	</div>
 				    	</div>
 			  		</div><!--Fin del div del evento-->
@@ -81,7 +95,7 @@
 					      	<div class="info-event">
 						        <h3 id="tittle-event" class="tittle-event">Título del evento</h3>
 						        <p id="date-event" class="date-event">Fecha del evento</p>
-						        <p id="address-event" class="address-event">Dirección del evento</p>
+						        <p id="address-event" class="address-event">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae est mollitia, repudiandae dolores. Necessitatibus</p>
 					      	</div>
 				    	</div>
 			  		</div><!--Fin del div del evento-->
@@ -95,7 +109,7 @@
 					      	<div class="info-event">
 						        <h3 id="tittle-event" class="tittle-event">Título del evento</h3>
 						        <p id="date-event" class="date-event">Fecha del evento</p>
-						        <p id="address-event" class="address-event">Dirección del evento</p>
+						        <p id="address-event" class="address-event">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae est mollitia, repudiandae dolores. Necessitatibus</p>
 					      	</div>
 				    	</div>
 			  		</div><!--Fin del div del evento-->
@@ -109,31 +123,17 @@
 					      	<div class="info-event">
 						        <h3 id="tittle-event" class="tittle-event">Título del evento</h3>
 						        <p id="date-event" class="date-event">Fecha del evento</p>
-						        <p id="address-event" class="address-event">Dirección del evento</p>
+						        <p id="address-event" class="address-event">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae est mollitia, repudiandae dolores. Necessitatibus</p>
 					      	</div>
 				    	</div>
 			  		</div><!--Fin del div del evento-->
 				</a>
-				<a href="infoevento.html" id="" name="" class="a-event">
-					<div class="col-xs-12 col-sm-6 col-md-4"><!--Inicio del div del evento-->
-				    	<div class="event">
-				    		<div id="img-event" class="img-event">
-				    			<img src="images/evento.jpg" alt="" id="img-event">
-				    		</div>
-					      	<div class="info-event">
-						        <h3 id="tittle-event" class="tittle-event">Título del evento</h3>
-						        <p id="date-event" class="date-event">Fecha del evento</p>
-						        <p id="address-event" class="address-event">Dirección del evento</p>
-					      	</div>
-				    	</div>
-			  		</div><!--Fin del div del evento-->
-				</a>	
-			</div>
-			<div class="ver-mas" id="ver-mas" align="center">
-				<p class="ver">Ver más</p>
-				<span class="glyphicon glyphicon-menu-down flecha" aria-hidden="true"></span>
-			</div>	
-		</div>
+	      	</div>
+	      	<div class="ver-mas" id="ver-mas" align="center" (click)='getEvents();'>
+	        	<p class="ver">Ver más</p>
+	        	<span class="glyphicon glyphicon-menu-down flecha" aria-hidden="true"></span>
+	      	</div>  
+	    </div>
 	</div>
 </body>
 </html>

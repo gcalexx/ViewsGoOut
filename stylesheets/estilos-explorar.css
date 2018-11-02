@@ -132,9 +132,13 @@ ul .glyphicon{
 }
 
 .fondo{
-  background-image: url(../images/fondoe.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-color: rgba(108, 19, 43, .8);
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  position: absolute;
+  top:0; 
+  left:0;
 }
 
 .a-event{

@@ -41,61 +41,75 @@
 		</div>
 	</div>
 	<div class="container-fluid info-evento" id="container-info-evento">
-		<div class="row event">
-			<div class="col-md-6 col-md-offset-2" >
+		<div class="row">
+			<div class="col-md-6 col-md-offset-2 event">
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"">
 				  	<div class="carousel-inner" role="listbox">
-				    	<div class="item active img-event">
-				    	  	<img src="images/evento.jpg" alt="...">
+				    	<div class="item ">
+				    	  	<img class="img-event" src="images/evento.jpg" alt="...">
 				    	</div>
-				    	<div class="item img-event">
-				      		<img src="images/ocio.jpg" alt="...">
+				    	<div class="item active">
+				      		<img class="img-event" src="images/ocio.jpg" alt="...">
 				    	</div>
 			 	 	</div>
 			 	</div>
 			</div>
-			<div class="col-md-2 date">
+			<div class="hidden-xs col-md-2 date event">
 				<p class="day" id="day">Sábado</p>
 				<p class="day-number" id="day-number">27</p>
 				<p class="month" id="month">Octubre</p>
 				<p class="time" id="time">03:30pm</p>
 			</div>
 		</div>
-		<div class="row">	
-			<div class="col-md-8 col-md-offset-2" style="">
-				<h1 align="center" id="nombre-evento">Chulo sin H</h1>
-				<span>De: </span><span id="organizador">Sebastiano cara de ano</span>
-				<hr>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 info">
+				<div class="row">	
+					<div class="col-md-10 col-md-offset-1">
+						<h1 id="nombre-evento">Nombre del evento</h1>
+						<span>De: </span><span id="organizador">Organizador</span>
+						<hr>
+					</div>
+				</div>
+				<div class="row">	
+					<div class="col-md-7 col-md-offset-1">
+						<h3>Descripción:</h3>
+						<p id="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque explicabo odit vero possimus, accusamus a dolor quidem impedit, aspernatur quibusdam iusto ad tenetur, quos cumque recusandae pariatur veritatis illum eligendi. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio odit, veritatis nulla enim blanditiis dolor repudiandae quod maxime assumenda qui perferendis dolorum suscipit fugit magni, molestiae sapiente? Recusandae saepe, nulla.</p>
+					</div>
+					<div class="col-md-3">
+						<h3>Dirección:</h3>
+						<p id="direccion">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem impedit.</p>
+					</div>
+					<div class="hidden-sm hidden-md hidden-lg col-md-12 date-xs">
+						<span id="day">Sábado</span>
+						<span id="day-number">30</span> de
+						<span id="month">Octubre</span>, 
+						<span id="time">3:30pm</span>
+					</div>
+					<div class="col-md-7 col-md-offset-1">
+						<h3>Asistentes:</h3>
+						<div class="asistentes" id="asistentes">
+							<a href=""><img src="images/fondoe.jpg" alt=""></a><!--foto del asistente-->
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/fondoe.jpg" alt=""></a>
+							<a href=""><img src="images/mas.jpg" alt=""></a><!--ver la lista completa de asistentes-->
+						</div>
+					</div>	
+					<div class="col-md-3">
+						<input type="button" class="btn btn-block" value="Asistir" id="asistir" name="asistir">
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row">	
-			<div class="col-md-6 col-md-offset-2" style="">
-				<h3>Descripción:</h3>
-				<p id="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque explicabo odit vero possimus, accusamus a dolor quidem impedit, aspernatur quibusdam iusto ad tenetur, quos cumque recusandae pariatur veritatis illum eligendi.</p>
-				<br>
-				<h3>Asistentes:</h3>
-				<ul id="asistentes">
-					<li>Juanito</li>
-					<li>Juanito</li>
-					<li>Juanito</li>
-					<li>Juanito</li>
-					<li>Juanito</li>
-					<li>Juanito</li>
-					<li>Juanito</li>
-					<li>Juanito</li>
-					<li>Juanito</li>
-					<li>Juanito</li>
-					<li>Juanito</li>
-
-				</ul>
-			</div>
-			<div class="col-md-2">
-				<h5>Dirección:</h5>
-				<p id="direccion">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem impedit.</p>
-				<br>	<br>	
-				<input type="button" class="btn btn-block" value="Asistir" id="asistir" name="asistir">
-			</div>
-		</div>
+		
 		
 		<!--<div class="row">
 			<div class="col-md-8 col-md-offset-2">
