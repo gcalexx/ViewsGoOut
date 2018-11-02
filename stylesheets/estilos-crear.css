@@ -147,14 +147,10 @@ ul .glyphicon{
 .crear{
   background-color: rgba(20, 20, 20, .8);
   border-radius: 0px 0px 5px 5px;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 15px;
   color: white;
   margin-top: 0px;
-}
-
-.crear > input[type=text]{
-
 }
 
 .activo{
@@ -177,6 +173,7 @@ ul .glyphicon{
 
 .crear input[type=submit] {
   background: #6c132b;
+  transition: all .5s;
 }
 
 .crear input[type=submit]:hover {
@@ -197,7 +194,7 @@ ul .glyphicon{
   position: relative;
 }
 
-.crear input[type="text"]:focus {
+.crear input[type=text]:focus {
   border-color: #6c132b;
   box-shadow: 0 0 8px 0 #6c132b;
 }
@@ -272,4 +269,34 @@ ul .glyphicon{
 .crear select:focus {
   border-color: #6c132b;
   box-shadow: 0 0 8px 0 #6c132b;
+  outline: none;
+}
+
+.crear input[type=file] {
+  width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+  
+}
+
+.crear label[for=imagen] {
+  margin-top: -5px;
+ font-size: 15px;
+ color: white;
+ background: #6c132b;
+ display: inline-block;
+ transition: all .5s;
+ cursor: pointer;
+ padding: 10px;
+ width: 100%;
+ text-align: center;
+ border-radius: 5px;
+ }
+
+.crear label[for=imagen]:hover {
+ background: #430e1c;
+  color: white;
 }
