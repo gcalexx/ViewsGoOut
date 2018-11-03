@@ -1,6 +1,8 @@
 $(document).ready(function(){
   $(".text, .text-user").hide();
   $(".nav").hide();
+  $("#popup_shadow").hide();
+  $('#popup').hide();
 
   $("#esidenav").mouseenter(function(){
     $("#esidenav").css("width", "230px");
@@ -58,8 +60,18 @@ $(document).ready(function(){
     setTimeout( function(){
       $("#esidenav").addClass("hidden-xs");
     }, 450);
-    
   });
+
+  $("#mas").click(function(){
+    $("#popup_shadow").fadeIn(500);
+    $('#popup').fadeIn(500);
+  }); 
+
+  $("#close").click(function(){
+    $("#popup_shadow").fadeOut(500);    
+    $('#popup').fadeOut(500);
+  }); 
+  
 
 });
 
