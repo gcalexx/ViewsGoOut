@@ -17,6 +17,11 @@ $(document).ready(function(){
       $("#menu, #menub").fadeIn(400);
   });
 
+  $("#close").click(function(){
+    $("#popup_shadow").fadeOut(500);    
+    $('#popup').fadeOut(500);
+  }); 
+
 });
 
 
