@@ -3,6 +3,9 @@ $(document).ready(function(){
   $(".nav").hide();
   $("#popup_shadow").hide();
   $('#popup').hide();
+  $('#popup-report').hide();
+  $('#popup-new').hide();
+  $('#popup-error').hide();
 
   $("#esidenav").mouseenter(function(){
     $("#esidenav").css("width", "230px");
@@ -67,11 +70,34 @@ $(document).ready(function(){
     $('#popup').fadeIn(500);
   }); 
 
-  $("#close").click(function(){
+  $("#report").click(function(){
+    $("#popup_shadow").fadeIn(500);
+    $('#popup-report').fadeIn(500);
+  }); 
+
+  $("#close, #cancel").click(function(){
     $("#popup_shadow").fadeOut(500);    
     $('#popup').fadeOut(500);
+    $('#popup-report').fadeOut(500);
   }); 
   
+  $(".ok").click(function(){
+    $('#popup_shadow').fadeOut(500);
+    $("#popup-new").fadeOut(500);    
+    $('#popup-error').fadeOut(500);
+  }); 
+
+  $("#crearn").click(function(){
+    $("#popup_shadow").fadeIn(500);  
+    $('#popup-new').fadeIn(500);
+  }); 
+
+  $("#creare").click(function(){
+    $("#popup_shadow").fadeIn(500);  
+    $('#popup-error').fadeIn(500);
+  }); 
+
+
   $("#profile-picture").mouseenter(function(){
       $("#picture, #label-picture").fadeIn(300);
   });
@@ -139,11 +165,6 @@ $(document).ready(function(){
       $("#friend-request").css("animation-duration", "1s");
       $("#friend-request").show();
     }, 600);
-
-    $("#search").mouseenter(function(){
-      $("#input-search").addClass("active");
-    });
-
   });
 
   /*************slider**********/
@@ -164,6 +185,51 @@ $(document).ready(function(){
       {'left' : -(slides.eq(i).position().left)},
       600
     );
+  });
+
+  /*buscar*/
+  function moveToSelected(element) {
+
+    if (element == "next") {
+      var selected = $(".selected").next();
+    } else if (element == "prev") {
+      var selected = $(".selected").prev();
+    } else {
+      var selected = element;
+    }
+
+    var next = $(selected).next();
+    var prev = $(selected).prev();
+    var prevSecond = $(prev).prev();
+    var nextSecond = $(next).next();
+
+    $(selected).removeClass().addClass("selected");
+
+    $(prev).removeClass().addClass("prev");
+    $(next).removeClass().addClass("next");
+
+    $(nextSecond).removeClass().addClass("nextRightSecond");
+    $(prevSecond).removeClass().addClass("prevLeftSecond");
+
+    $(nextSecond).nextAll().removeClass().addClass('hideRight');
+    $(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+  }
+
+  $('#carousel div').click(function() {
+    moveToSelected($(this));
+  });
+
+  $('#prev').click(function() {
+    moveToSelected('prev');
+  });
+
+  $('#next').click(function() {
+    moveToSelected('next');
+  });
+
+  $("#lupa").click(function(){
+    $("#search").submit();
   });
 
 });

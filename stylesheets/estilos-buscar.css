@@ -14,6 +14,32 @@
   }
 }
 
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 *{
   font-family: 'Raleway', sans-serif;
 }
@@ -347,16 +373,58 @@ ul .glyphicon{
   text-align: center;
   color: white;
   font-size: 25px;
-  margin-top: 25px;
   cursor: pointer;
-}
-
-.input-search{
-  display: none;
-  transition: 2s;
 }
 
 .active{
   visibility: visible;
   width: 100%;
+}
+
+.span{
+  transition: 1s;
+  display: inline-block;
+}
+
+.icon input[type=text]{
+  color: black;
+  height: 40px;
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 50px;
+  margin: 1px 0;
+  outline: none;
+  padding: 3px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  padding: 10px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 20px;
+}
+
+.icon input[type="text"]:focus {
+  border-color: #6c132b;
+  box-shadow: 0 0 8px 0 #6c132b;
+}
+
+.icon {
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.icon span {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 3.5px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.icon input[type="text"]:focus + span {
+  color: #6c132b;
 }

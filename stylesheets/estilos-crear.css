@@ -301,3 +301,65 @@ ul .glyphicon{
  background: #430e1c;
   color: white;
 }
+
+.btn{
+  background: #6c132b;
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #430e1c;
+  color: white;
+}
+
+.popup {
+  border-radius: 5px;
+  margin-top: 22rem;
+  background: #fff;       
+  border: 1px solid #999;
+  z-index: 999; 
+  text-align: center
+}   
+
+.header{
+  font-size: 30px;
+  text-align: center;
+  background-color: #6c132b;
+  margin: -21px -16px 0px -16px;
+  padding: .5px;
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.popup_shadow {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;   
+  overflow: auto;         
+  background-color: rgba(0,0,0,.8); 
+  z-index: 900;         
+} 
+
+.closebtn{
+  color: white;
+  position: absolute;
+  top: -30px;
+  right: 12px;
+  font-size: 36px;
+  margin-left: 50px;
+  transition: .5s
+}
+
+.popup a{
+  text-decoration: none;
+}  
+
+.closebtn:hover{
+  color: rgb(20, 20, 20);
+}

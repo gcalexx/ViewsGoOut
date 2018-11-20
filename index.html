@@ -125,9 +125,26 @@
 		<br>
 	</footer>
 	<div class="popup_shadow" id="popup_shadow" >
-		<div id="popup" class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 popup">
-			<a href="javascript:void(0)" class="closebtn" id="close">&times;</a>
-			<h3 align="center">Usuario Registrado, ya puedes iniciar sesión</h3>
+		<div id="popup-registered" class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 popup">
+			<h1>Usuario Registrado</h1>
+			<div class="hr"></div>
+			<h3>Ya puedes iniciar sesión</h3>
+			<input type="button" class="btn ok" value="Ok" name="">
+			<br>
+		</div>
+		<div id="popup-error-bol" class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 popup">
+			<h1>Boleta existente</h1>
+			<div class="hr"></div>
+			<h3>Ya existe una cuenta vinculada a este número de boleta, prueba con otra</h3>
+			<input type="button" class="btn ok" value="Ok" name="">
+			<br>
+		</div>
+		<div id="popup-error-login" class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 popup">
+			<h1>Boleta o contraseña incorrectos</h1>
+			<div class="hr"></div>
+			<h3>Parece que ingresaste tu número de boleta o tu contraseña mal, prueba nuevamente</h3>
+			<input type="button" class="btn ok" value="Ok" name="">
+			<br>
 		</div>
 	</div>
 </body>

@@ -134,7 +134,7 @@
 				<div class="row">	
 					<div class="col-md-6 col-md-offset-3">
 						<br>	
-						<input type="button" class="btn btn-block btn-danger" value="Reportar Evento" id="report" name="report">
+						<input type="button" class="btn btn-block btn-report" value="Reportar Evento" id="report" name="report">
 					</div>
 				</div>
 			</div>
@@ -153,6 +153,24 @@
 					<a href=""><li><img src="images/fondoe.jpg" alt="">Pececillo</li></a>
 					<a href=""><li><img src="images/fondoe.jpg" alt="">Pececillo</li></a>
 				</ul>						
+			</div>
+			<div id="popup-report" class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 popup">
+				<div class="header">
+					<h1>Reportar evento</h1>
+				</div>
+				<a href="javascript:void(0)" class="closebtn" id="close">&times;</a>
+				<div class="hr"></div>
+				<h3>Indica brevemente la razón del reporte</h3>
+				<form name="report" action="" method="POST">
+					<textarea rows="4" id="text-report" required minlength="1" maxlength="200"></textarea>
+					<br>
+					<div class="col-md-6">
+						<input type="button" class="btn btn-block" id="cancel" value="Cancelar" name=""><br>
+					</div>
+					<div class="col-md-6">
+						<input type="submit" class="btn btn-block ok" id="send-report" value="Enviar reporte" name=""><br>
+					</div>
+				</form>
 			</div>
 		</div>
 		
