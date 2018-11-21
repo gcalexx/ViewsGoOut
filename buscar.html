@@ -43,16 +43,41 @@
 		<div class="container container-buscar" id="container-buscar">
 			<div  class=" row">
 				<div class="col-md-6 col-md-offset-3">
-					<form id="search" action="" method="post">
-						<div class='icon'>
+					<form id="form-search" action="" method="post">
+						<div class='icon input-group'>
 							<input id="input-search" type="text" class="input-search" placeholder="Busca personas o eventos">
-							<span id="lupa" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+							<span id="lupa" class="glyphicon glyphicon-search" aria-hidden="true"></span>				
 		              	</div>
 					</form>
 				</div>
 			</div>
-			<div id="events-today">
-				<h1 style="color: white;">Eventos hoy</h1>
+			<div id="categorias">
+				<h1>Categorías</h1>
+				<hr>	
+				<div id="carousel">
+					<div class="prevLeftSecond">
+			        	<a href="javascript:void(0)" id="ocio"><img src="images/Ocio.jpg"></a>
+			      	</div>
+			      	<div class="prev">
+			        	<a href="javascript:void(0)" id="deporte"><img src="images/Deporte.jpg"></a>
+			      	</div>
+			      	<div class="selected">
+			        	<a href="javascript:void(0)" id="musica"><img src="images/Musica.jpg"></a>
+			      	</div>
+			      	<div class="next">
+			        	<a href="javascript:void(0)" id="fiesta"><img src="images/Fiesta.jpg"></a>
+			      	</div>
+			      	<div class="nextRightSecond">
+			        	<a href="javascript:void(0)" id="cultura"><img src="images/Cultura.jpg"></a>
+			      	</div>
+			    </div>
+			    <div class="buttons">
+			    	<span id="prev" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    	<span id="next" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    	</div>
+			</div>
+			<div id="events-category">
+				<h1 style="color: white; display: inline;">Eventos de </h1><h1 style="display: inline;" id="category"></h1>
 		      	<hr>  
 		      	<div class="row" id="row" >
 		        	<a href="infoevento.html" id="" name="" class="a-event">
@@ -99,30 +124,79 @@
 					</a>
 				</div>
 			</div>
-			<div id="categorias">
-				<h1>Categorías</h1>
-				<hr>	
-				<div id="carousel">
-					<div class="prevLeftSecond">
-			        	<img src="images/Ocio.jpg">
+			<br><br><br><br>
+			<div id="search"><!--Busqueda-->
+				<div id="search-events">
+					<h1 style="color: white; display: inline;">Eventos</h1>
+			      	<hr>  
+			      	<div class="row" id="row" >
+			        	<a href="infoevento.html" id="" name="" class="a-event">
+							<div class="col-xs-12 col-sm-6 col-md-4">
+						    	<div class="event">
+						    		<div id="img-event" class="img-event">
+						    			<img src="images/evento.jpg" alt="" id="img-event">
+						    		</div>
+							      	<div class="info-event">
+								        <h3 id="tittle-event" class="tittle-event">Título del evento</h3>
+								        <p id="date-event" class="date-event">Fecha del evento</p>
+								        <p id="address-event" class="address-event">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae est mollitia, repudiandae dolores. Necessitatibus</p>
+							      	</div>
+						    	</div>
+					  		</div>
+						</a>
+						<a href="infoevento.html" id="" name="" class="a-event">
+							<div class="col-xs-12 col-sm-6 col-md-4">
+						    	<div class="event">
+						    		<div id="img-event" class="img-event">
+						    			<img src="images/evento.jpg" alt="" id="img-event">
+						    		</div>
+							      	<div class="info-event">
+								        <h3 id="tittle-event" class="tittle-event">Título del evento</h3>
+								        <p id="date-event" class="date-event">Fecha del evento</p>
+								        <p id="address-event" class="address-event">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae est mollitia, repudiandae dolores. Necessitatibus</p>
+							      	</div>
+						    	</div>
+					  		</div>
+						</a>
+						<a href="infoevento.html" id="" name="" class="a-event">
+							<div class="col-xs-12 col-sm-6 col-md-4">
+						    	<div class="event">
+						    		<div id="img-event" class="img-event">
+						    			<img src="images/evento.jpg" alt="" id="img-event">
+						    		</div>
+							      	<div class="info-event">
+								        <h3 id="tittle-event" class="tittle-event">Título del evento</h3>
+								        <p id="date-event" class="date-event">Fecha del evento</p>
+								        <p id="address-event" class="address-event">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae est mollitia, repudiandae dolores. Necessitatibus</p>
+							      	</div>
+						    	</div>
+					  		</div>
+						</a>
+					</div>
+				</div>
+				<br><br>
+				<div id="search-users">
+					<h1 style="color: white; display: inline;">Usuarios</h1>
+			      	<hr>  
+			      	<div class="row" id="row">
+						<div class="col-xs-12 col-sm-6 col-md-6">
+					    	<div class="user">
+					    		<div id="img-user" class="img-user">
+					    			<img src="images/user.jpg" alt="" id="img-user">
+					    		</div>
+						      	<div class="info-user">
+							        <h3 id="tittle-user" class="tittle-user">Pececillo</h3>
+							        <br>
+							        <div class="buttons">
+							        	<div class="col-md-8 col-sm-6">
+							    			<input type="button" class="btn btn-block" name="agregar" id="agregar" value="Agregar">
+							    		</div>
+							        </div>
+						      	</div>
+					    	</div>
+				  		</div>
 			      	</div>
-			      	<div class="prev">
-			        	<img src="images/Deporte.jpg">
-			      	</div>
-			      	<div class="selected">
-			        	<img src="images/Musica.jpg">
-			      	</div>
-			      	<div class="next">
-			        	<img src="images/Fiesta.jpg">
-			      	</div>
-			      	<div class="nextRightSecond">
-			        	<img src="images/Cultura.jpg">
-			      	</div>
-			    </div>
-			    <div class="buttons">
-			    	<span id="prev" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			    	<span id="next" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    	</div>
+				</div>
 			</div>
 		</div>
 	</div>

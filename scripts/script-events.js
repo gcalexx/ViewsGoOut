@@ -6,6 +6,7 @@ $(document).ready(function(){
   $('#popup-report').hide();
   $('#popup-new').hide();
   $('#popup-error').hide();
+  $("#events-category").hide();
 
   $("#esidenav").mouseenter(function(){
     $("#esidenav").css("width", "230px");
@@ -167,6 +168,11 @@ $(document).ready(function(){
     }, 600);
   });
 
+  $("#editar").click(function(){
+    $("#popup_shadow").fadeIn(500);  
+    $('#popup-edit').fadeIn(500);
+  });
+
   /*************slider**********/
   var slides = $('.main-slide');
   var i = 0;
@@ -229,8 +235,15 @@ $(document).ready(function(){
   });
 
   $("#lupa").click(function(){
-    $("#search").submit();
+    $("#form-search").submit();
   });
+
+  $('#categorias').on('click', 'a', function(){
+    $("#categorias").fadeOut(500);
+    $("#category").text($(this).attr('id'));
+    setTimeout(function(){$("#events-category").fadeIn(1000);}, 400);
+    
+  })
 
 });
 

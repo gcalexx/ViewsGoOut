@@ -87,26 +87,26 @@
 			<div class="row my-events" id="my-events">
 				<h1>Mis Eventos</h1>
 				<h3>No has creado ningún evento</h3>
-				<a href="" class="a-event">
-					<div class="col-xs-12 col-sm-6 col-md-6">
-				    	<div class="event">
-				    		<div id="img-event" class="img-event">
-				    			<img src="images/evento.jpg" alt="" id="img-event">
-				    		</div>
-					      	<div class="info-event">
-						        <h3 id="tittle-event" class="tittle-event">Título del evento </h3>
-						        <div class="buttons">
-						        	<div class="col-md-4 col-sm-4 col-xs-6">
-						    			<input type="button" class="btn btn-block" name="eliminar" id="eliminar" value="Eliminar">
-						    		</div>
-						    		<div class="col-md-4 col-sm-4 col-xs-6">
-						    			<input type="button" class="btn btn-block" name="editar" id="editar" value="Editar">
-						    		</div>
-						        </div>
-					      	</div>
-				    	</div>
-			  		</div>
-				</a>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="event">
+						<a href="javascript:void(0)" class="a-event">
+							<div id="img-event" class="img-event">
+								<img src="images/evento.jpg" alt="" id="img-event">
+							</div>
+						</a>
+						<div class="info-event">
+							<h3 id="tittle-event" class="tittle-event">Título del evento </h3>
+							<div class="buttons">
+								<div class="col-md-4 col-sm-4 col-xs-6">
+									<input type="button" class="btn btn-block" name="eliminar" id="eliminar" value="Eliminar">
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-6">
+									<input type="button" class="btn btn-block" name="editar" id="editar" value="Editar">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="row event-request" id="event-request">
 				<h1>Invitaciones a eventos</h1>
@@ -219,7 +219,84 @@
 				</a>
 			</div>
 		</div>
-			
+		<!--Editar evento-->
+		<div class="popup_shadow" id="popup_shadow" >
+			<div id="popup-edit" class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 popup">
+				<div class="header">
+					<h1>Edita tu evento</h1>
+					<a href="javascript:void(0)" class="closebtn" id="close">&times;</a>
+				</div>
+				<br>
+				<form name="edit" method="" action="" class="form-horizontal form-edit">
+					<div class="form-group">
+						<label for="nombre" class="col-md-2 col-md-offset-1 control-label">Nombre:</label>
+						<div class="col-md-8">
+							  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe un nombre corto y claro">
+						</div>
+					</div>
+					<div class="form-group">
+					<label class="col-md-2 col-md-offset-1 control-label">Imagen:</label>
+					<div class="col-md-8" style="margin-top: 7px;">
+						<span>	
+							<input class="" type="file" id="imagen" name="imagen">
+						</span>
+						<label for="imagen">
+							<span>Carga los archivos que quieras</span>
+						</label>
+					</div>
+					</div>
+					<div class="form-group">
+						<label for="descripcion" class="col-md-2 col-md-offset-1 control-label">Descripción:</label>
+						<div class="col-md-8">
+							<textarea class="form-control" id="descripcion" name="descripcion" rows="3" 
+							placeholder="Escribe brevemente la descripción del evento"></textarea>
+						</div>
+					</div>
+					  <div class="form-group">
+						<label for="fecha" class="col-md-2 col-md-offset-1 control-label">Fecha y hora:</label>
+						<div class="col-md-4">
+							<input type='date' class="form-control" id='fecha' name="fecha" placeholder="Fecha del evento">
+						</div>
+						<div class="col-md-4">
+							<input type='time' class="form-control" id='hora' name="hora" placeholder="Hora del evento">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="direccion" class="col-md-2 col-md-offset-1 control-label">Dirección:</label>
+						<div class="col-md-8">
+							  <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección del evento">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="categoria" class="col-md-2 col-md-offset-1 control-label">Categoría:</label>
+						<div class="col-md-3">
+							<select class="form-control" id="categoria" name="categoria" placeholder="Categoría del evento">
+								<option>Música</option>
+								<option>Artes</option>
+								<option>Ocio</option>
+								<option>Deportes</option>
+								<option>Fiestas</option>
+							</select>
+						</div>
+						<label for="privacidad" class="col-md-2 control-label">Privacidad:</label>
+						<div class="col-md-3">
+							<select class="form-control" id="privacidad" name="privacidad" placeholder="Privacidad del evento">
+								<option>Público</option>
+								<option>Privado</option>
+							</select>
+						</div>
+					  </div>
+					  <div class="form-group">
+						<div class="col-md-5 col-md-offset-1">
+							<input type="reset" class="btn ok btn-block" value="Cancelar" name="">
+						</div>
+						<div class="col-md-5">
+							<input type="submit" class="btn btn-block" value="Crear evento">
+						</div>
+					  </div>
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

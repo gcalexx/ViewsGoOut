@@ -450,3 +450,199 @@ ul .glyphicon{
   text-align: center;
   display: none;
 }
+
+.popup {
+  border-radius: 5px;
+  margin-top: 5%;
+  background: #fff;       
+  border: 1px solid #999;
+  z-index: 999; 
+  color: black;
+  text-align: center;
+  padding-bottom: 15px;
+  display: none;
+}   
+
+.header{
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+  margin: -21px -16px 0px -16px;
+  padding: .5px;
+  color: white;
+  border: 5px 5px 0px 0px;
+}
+
+.popup_shadow {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;   
+  overflow: auto;         
+  background-color: rgba(0,0,0,.8); 
+  z-index: 900;
+  display: none;         
+} 
+
+.closebtn{
+  color: white;
+  position: absolute;
+  top: -30px;
+  right: 12px;
+  font-size: 36px;
+  margin-left: 50px;
+  transition: .5s
+}
+
+.popup a{
+  text-decoration: none;
+}  
+
+.closebtn:hover{
+  color: #6c132b;
+}
+
+.btn{
+  background: #6c132b;
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #430e1c;
+  color: white;
+}
+
+.popup input[type=submit] {
+  background: #6c132b;
+  transition: all .5s;
+}
+
+.popup input[type=submit]:hover {
+  background: #430e1c;
+  color: white;
+}
+
+.popup input[type=text]{
+  color: black;
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 1px 0;
+  outline: none;
+  padding: 3px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  position: relative;
+}
+
+.popup input[type=text]:focus {
+  border-color: #6c132b;
+  box-shadow: 0 0 8px 0 #6c132b;
+}
+
+.popup textarea{
+  color: black;
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 1px 0;
+  outline: none;
+  padding: 3px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  position: relative;
+}
+
+.popup textarea:focus {
+  border-color: #6c132b;
+  box-shadow: 0 0 8px 0 #6c132b;
+}
+
+.popup input[type=date]{
+  color: black;
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 1px 0;
+  outline: none;
+  padding: 3px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  position: relative;
+}
+
+.popup input[type="date"]:focus {
+  border-color: #6c132b;
+  box-shadow: 0 0 8px 0 #6c132b;
+}
+
+.popup input[type=time]{
+  color: black;
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 1px 0;
+  outline: none;
+  padding: 3px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  position: relative;
+}
+
+.popup input[type="time"]:focus {
+  border-color: #6c132b;
+  box-shadow: 0 0 8px 0 #6c132b;
+}
+
+.popup select{
+  color: black;
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 1px 0;
+  outline: none;
+  padding: 3px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  position: relative;
+}
+
+.popup select:focus {
+  border-color: #6c132b;
+  box-shadow: 0 0 8px 0 #6c132b;
+  outline: none;
+}
+
+.popup input[type=file] {
+  width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+  
+}
+
+.popup label[for=imagen] {
+  margin-top: -5px;
+ font-size: 15px;
+ color: white;
+ background: #6c132b;
+ display: inline-block;
+ transition: all .5s;
+ cursor: pointer;
+ padding: 10px;
+ width: 100%;
+ text-align: center;
+ border-radius: 5px;
+ }
+
+.popup label[for=imagen]:hover {
+ background: #430e1c;
+  color: white;
+}
