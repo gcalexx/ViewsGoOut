@@ -245,6 +245,43 @@ $(document).ready(function(){
     
   })
 
+  /*Configuracion*/
+  $("#edit-profile").click(function(){
+    $("#div-edit-password").fadeOut();
+    $("#div-close-account").fadeOut();
+    $(".active").remove();
+    $("#edit-password, #close-account").removeClass("li-active");
+    $("#edit-profile").addClass("li-active");
+    $("#edit-profile").after("<div class='active'></div>");
+    setTimeout(function(){
+      $("#div-edit-profile").fadeIn();
+    }, 400);
+  });
+
+  $("#edit-password").click(function(){
+    $("#div-edit-profile").fadeOut();
+    $("#div-close-account").fadeOut();
+    $(".active").remove();
+    $("#edit-profile, #close-account").removeClass("li-active");
+    $("#edit-password").addClass("li-active");
+    $("#edit-password").after("<div class='active'></div>");
+    setTimeout(function(){
+      $("#div-edit-password").fadeIn();
+    }, 400);
+  });
+
+  $("#close-account").click(function(){
+    $("#div-edit-password").fadeOut();
+    $("#div-edit-profile").fadeOut();
+    $(".active").remove();
+    $("#edit-profile, #edit-password").removeClass("li-active");
+    $("#close-account").addClass("li-active");
+    $("#close-account").after("<div class='active'></div>");
+    setTimeout(function(){
+      $("#div-close-account").fadeIn();
+    }, 400);
+  });
+
 });
 
 
